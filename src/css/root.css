@@ -301,7 +301,7 @@ html {
     line-height: 1.5rem;
     list-style: none;
     margin: 0;
-    color: #585b5d;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -520,7 +520,7 @@ html {
     font-size: 0.875rem;
     line-height: 1.5em;
     margin: 0;
-    color: #585b5d;
+    color: white;
     display: block;
   }
   #cs-navigation .cs-nav-button .cs-link-content {
@@ -528,7 +528,7 @@ html {
     line-height: 1.5em;
     font-weight: 700;
     margin: 0;
-    color: var(--headerColor);
+    color: var(--bodyTextColorWhite);
     display: block;
   }
   #cs-navigation .cs-nav {
@@ -1006,6 +1006,7 @@ html {
     margin: 0;
     display: flex;
     align-items: center;
+    color: white;
     flex: none;
     justify-content: flex-start;
     gap: 0.25rem;
@@ -1115,7 +1116,7 @@ html {
     font-size: 0.875rem;
     line-height: 1.5em;
     margin: 0;
-    color: #585b5d;
+    color: white;
     display: block;
   }
   #cs-navigation .cs-link-content {
@@ -1123,7 +1124,7 @@ html {
     line-height: 1.5em;
     font-weight: 700;
     margin: 0;
-    color: var(--headerColor);
+    color: var(--bodyTextColorWhite);
     display: block;
   }
   #cs-navigation .cs-nav-button,
