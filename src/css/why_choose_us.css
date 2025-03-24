@@ -1,0 +1,431 @@
+
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #cta-403 {
+    padding: var(--sectionPadding);
+    position: relative;
+  }
+  #cta-403 .cs-background {
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #cta-403 .cs-background:before {
+    /* background color overlay */
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #1a1a1a;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #cta-403 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+    /* positions the image inside the parent */
+    object-position: 0% 30%;
+  }
+  #cta-403 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #cta-403 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    max-width: 32.3125rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #cta-403 .cs-title,
+  #cta-403 .cs-text {
+    color: var(--bodyTextColorWhite);
+  }
+  #cta-403 .cs-text {
+    opacity: 0.8;
+    margin-bottom: 1rem;
+  }
+  #cta-403 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #cta-403 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #000;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+  }
+  #cta-403 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #fff;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #cta-403 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #cta-403 .cs-background {
+    /* clips the black slant so it doesnt overflow */
+    overflow: hidden;
+  }
+  #cta-403 .cs-background:before {
+    width: 40%;
+    opacity: 1;
+  }
+  #cta-403 .cs-background:after {
+    /* black slant */
+    content: "";
+    width: 31.25rem;
+    height: 93.75rem;
+    margin-right: -3.125rem;
+    background: -moz-linear-gradient(
+      left,
+      #1a1a1a 0%,
+      #1a1a1a 57%,
+      rgba(26, 26, 26, 0) 100%
+    );
+    background: -webkit-linear-gradient(
+      left,
+      #1a1a1a 0%,
+      #1a1a1a 57%,
+      rgba(26, 26, 26, 0) 100%
+    );
+    background: linear-gradient(
+      to right,
+      #1a1a1a 0%,
+      #1a1a1a 57%,
+      rgba(26, 26, 26, 0) 100%
+    );
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 50%;
+    transform: rotate(10deg) translateY(-50%);
+  }
+  #cta-403 .cs-background img {
+    width: 60%;
+    object-position: right;
+    left: auto;
+    right: 0;
+  }
+  #cta-403 .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #cta-403 .cs-content {
+    text-align: left;
+    align-items: flex-start;
+    width: 45%;
+  }
+  #cta-403 .cs-text,
+  #cta-403 .cs-title {
+    margin-left: 0;
+  }
+}
+
+/*-- -------------------------- -->
+<---        Why Choose Us       -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #why-choose-2317 {
+    padding: var(--sectionPadding);
+    padding-bottom: 0;
+    position: relative;
+  }
+  #why-choose-2317 .cs-container {
+    width: 100%;
+    /* changes to 1440px on desktop */
+    max-width: 44rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  #why-choose-2317 .cs-content {
+    /* set text align to center if content needs to be centrally aligned */
+    text-align: left;
+    width: 100%;
+    /* 48px - 64px */
+    margin-bottom: clamp(3rem, 6vw, 4rem);
+    display: flex;
+    flex-direction: column;
+    /* aligns content to the left, set to center to centrally align */
+    align-items: flex-start;
+  }
+  #why-choose-2317 .cs-title {
+    margin: 0;
+  }
+  #why-choose-2317 .cs-content-picture {
+    width: 100%;
+    height: 20.5rem;
+    display: block;
+  }
+  #why-choose-2317 .cs-content-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #why-choose-2317 .cs-ul {
+    width: 100%;
+    max-width: 39.375rem;
+    margin: 2rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #why-choose-2317 .cs-li {
+    list-style: none;
+    margin: 0 0 1.5rem;
+    padding: 0 0 1.5rem;
+    border-bottom: 1px solid #e7e7e8;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.25rem;
+    /* remove the border and spacing on the last cs-li */
+  }
+  #why-choose-2317 .cs-li:last-of-type {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  #why-choose-2317 .cs-icon {
+    width: 3rem;
+    height: auto;
+    display: block;
+  }
+  #why-choose-2317 .cs-h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: left;
+    margin: 0 0 0.5rem 0;
+    color: var(--headerColor);
+  }
+  #why-choose-2317 .cs-li-text {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: left;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #why-choose-2317 .cs-picture {
+    width: 100%;
+    height: 22.5rem;
+    display: block;
+  }
+  #why-choose-2317 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #why-choose-2317 .cs-button-solid {
+    font-size: 1rem;
+    font-weight: 700;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    margin: 0;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    color: var(--bodyTextColorWhite);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  #why-choose-2317 .cs-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #why-choose-2317 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #why-choose-2317 .cs-container {
+    max-width: 80rem;
+    gap: 1rem;
+  }
+  #why-choose-2317 .cs-content-group {
+    padding-right: 1.25rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* 32px - 48px */
+    column-gap: clamp(2rem, 3vw, 3rem);
+  }
+  #why-choose-2317 .cs-content {
+    grid-column: span 2;
+  }
+  #why-choose-2317 .cs-content-picture {
+    /* 284px - 458px */
+    width: clamp(17.75rem, 34vw, 28.625rem);
+    height: 100%;
+    grid-column: span 1;
+  }
+  #why-choose-2317 .cs-ul {
+    margin-top: 0;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #why-choose-2317 .cs-container {
+    max-width: 90rem;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  #why-choose-2317 .cs-picture {
+    /* 221px - 413px */
+    width: clamp(13.8125rem, 21vw, 25.8125rem);
+    height: auto;
+    flex: 1 0 auto;
+  }
+}
+
+/*-- -------------------------- -->
+<---           Logos            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #logos-2317 {
+    /* 60px - 120px top & bottom */
+    /* 16px - 40px left & right */
+    padding: clamp(3.75rem, 8vw, 7.5rem) clamp(1rem, 2vw, 2.5rem) clamp(3.75rem, 6vw, 6.25rem);
+  }
+  #logos-2317 .cs-container {
+    text-align: center;
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #logos-2317 .cs-content {
+    width: 100%;
+    position: relative;
+    /* grey background line */
+  }
+  #logos-2317 .cs-content::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #e7e7e8;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  #logos-2317 .cs-title {
+    font-size: 1.5625rem;
+    font-weight: 700;
+    /* we set the width to fit the content, center the title with margin: auto; on the sides, then apply a background. this cuts the grey line 16px either side of the title, no matter how long it it */
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-color: #fff;
+    z-index: 1;
+  }
+  #logos-2317 .cs-logo-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-self: stretch;
+  }
+  #logos-2317 .cs-logo {
+    width: 45%;
+    max-width: 12.5rem;
+    height: auto;
+    margin: 0;
+    mix-blend-mode: darken;
+    display: block;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #logos-2317 .cs-logo {
+    width: 15%;
+    /* the max width becomes whatever the actual width of the image is */
+    max-width: max-content;
+  }
+}
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #logos-2317 .cs-logo-wrapper {
+    justify-content: space-between;
+  }
+}
+                                

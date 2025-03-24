@@ -6,7 +6,8 @@
 @media only screen and (min-width: 0rem) {
   #hero-1115 {
       /* 200px - 300px top */
-      padding: clamp(12.5rem, 16.82vw, 18.75rem) 1rem 6.25rem;
+      padding: clamp(0.5rem, 2.82vw, 8.75rem) 0.1rem 6.25rem;
+
       background-color: #f7f7f7;
       /* clips the svg wave from overflowing */
       overflow: hidden;
@@ -118,6 +119,42 @@
   #hero-1115 .cs-button-solid:hover:before {
       width: 100%;
   }
+
+  #hero-1115 .cs-button-solid-other {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: white;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: black;
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+}
+#hero-1115 .cs-button-solid-other:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: var(--primary);
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+}
+#hero-1115 .cs-button-solid-other:hover:before {
+    width: 100%;
+}
   #hero-1115 .cs-image-group-wrapper {
       display: flex;
       flex-direction: column;
@@ -631,3 +668,125 @@
   }
 }
                                 
+
+/*-- -------------------------- -->
+<---           Steps            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #steps-1209 {
+      padding: var(--sectionPadding);
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+  }
+  #steps-1209 .cs-container {
+      /* changes to 1280px at tablet */
+      max-width: 44rem;
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 48px - 64px */
+      gap: clamp(3rem, 6vw, 4rem);
+  }
+  #steps-1209 .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: center;
+  }
+
+  #steps-1209 .cs-card-group {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 1.25rem;
+  }
+  #steps-1209 .cs-item {
+      text-align: center;
+      list-style: none;
+      /* 8px - 48px */
+      padding: 0 clamp(0.5rem, 5vw, 3rem);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      grid-column: span 12;
+  }
+  #steps-1209 .cs-item:last-of-type:after {
+      display: none;
+  }
+  #steps-1209 .cs-item:after {
+      /* content property isn't set until 768px, to hide the line on mobile */
+      /* 120px - 200px */
+      content: "";
+      width: clamp(7.5rem, 14vw, 12.5rem);
+      height: 5.625rem;
+      background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/orange-dotted-line.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 1;
+      display: none;
+      position: absolute;
+      top: 0;
+      left: clamp(11.5rem, 24vw, 20rem);
+  }
+  #steps-1209 .cs-number {
+      font-size: 1.25rem;
+      font-weight: bold;
+      width: 5.5rem;
+      height: 5.5rem;
+      /* 16px - 32px */
+      margin-bottom: clamp(1rem, 4vw, 2rem);
+      color: white;
+      background-color: var(--primaryLight);
+      border: 1px solid var(--primary);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #steps-1209 .cs-icon {
+      width: 2.5rem;
+      height: auto;
+      display: block;
+  }
+  #steps-1209 .cs-h3 {
+      font-size: 1.25rem;
+      line-height: 1.2em;
+      text-align: inherit;
+      margin: 0 0 0.75rem 0;
+      color: var(--headerColor);
+  }
+  #steps-1209 .cs-item-text {
+      font-size: 1rem;
+      line-height: 1.5em;
+      text-align: inherit;
+      max-width: 25.8125rem;
+      margin: 0;
+      color: var(--bodyTextColor);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #steps-1209 .cs-container {
+      max-width: 80rem;
+  }
+  #steps-1209 .cs-item {
+      grid-column: span 4;
+  }
+  #steps-1209 .cs-item:after {
+      display: block;
+  }
+}
+
+                              
