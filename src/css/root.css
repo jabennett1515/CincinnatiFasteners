@@ -1154,13 +1154,13 @@ html {
     text-decoration: none;
     text-transform: uppercase;
     padding: 0 1.75rem;
-    color: white;
+    color: var(--primary);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
     transition: color 0.3s, background-color 0.3s;
-    background-color: var(--primary);
+    background-color: white;
     border-radius: 10px;
   }
   #cs-navigation .cs-button-border:hover {
@@ -1169,7 +1169,7 @@ html {
   }
   #cs-navigation .cs-button-border .cs-icon {
     width: 1.25rem;
-    filter: grayscale(1) brightness(10000%);
+    filter: grayscale(1) invert(1) brightness(1112%);
   }
 }
 

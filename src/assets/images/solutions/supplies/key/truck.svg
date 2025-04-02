@@ -1,0 +1,36 @@
+<svg
+  width="128"
+  height="128"
+  viewBox="0 0 100 100"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <linearGradient id="gradientBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#CDE7F6"/>
+      <stop offset="100%" stop-color="#FFF"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Truck Body -->
+  <path 
+    d="M20,45 H50 V30 H75 L85,40 V55 H50 A10,10 0 0 1 40,55 H20 Z" 
+    fill="url(#gradientBlue)" 
+    stroke="#98c1d4"
+    stroke-width="2" 
+    stroke-linejoin="round"
+  />
+  
+  <!-- Wheels -->
+  <circle cx="30" cy="58" r="5" fill="#444" />
+  <circle cx="60" cy="58" r="5" fill="#444" />
+  
+  <!-- Speed Lines -->
+  <path 
+    d="M10,40 H18 
+       M10,45 H18 
+       M10,50 H18"
+    stroke="#98c1d4"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+</svg>
