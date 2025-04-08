@@ -320,7 +320,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #sbs-2291 {
-    padding: var(--sectionPadding);
+    padding: 1rem;
     overflow: hidden;
   }
   #sbs-2291 .cs-container {
@@ -546,7 +546,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #sbsr-2289 {
-    padding: var(--sectionPadding);
+    padding: 1rem;
     overflow: hidden;
   }
   #sbsr-2289 .cs-container {
