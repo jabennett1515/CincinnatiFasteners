@@ -361,7 +361,6 @@
     margin: 0 0 2rem;
     /* 24px - 32px */
     padding: clamp(1.5rem, 4vw, 2rem);
-    background-color: #fef5f4;
     border-left: 0.25rem solid var(--secondary);
   }
   #sbs-2291 .cs-h3 {
@@ -431,6 +430,7 @@
     left: 0;
     z-index: -1;
     transition: width 0.3s;
+    border-radius: 10px;
   }
   #sbs-2291 .cs-button-solid:hover {
     color: #fff;
@@ -589,7 +589,6 @@
     margin: 0 0 2rem;
     /* 24px - 32px */
     padding: clamp(1.5rem, 4vw, 2rem);
-    background-color: #fef5f4;
     border-left: 0.25rem solid var(--secondary);
   }
   #sbsr-2289 .cs-h3 {
@@ -659,6 +658,7 @@
     left: 0;
     z-index: -1;
     transition: width 0.3s;
+    border-radius: 10px;
   }
   #sbsr-2289 .cs-button-solid:hover {
     color: #fff;
@@ -861,6 +861,7 @@
         flex: none;
         position: relative;
         z-index: 1;
+        filter: brightness(0);
     }
     #contact-1271 .cs-picture:before {
         content: "";

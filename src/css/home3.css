@@ -789,6 +789,7 @@
     position: relative;
     z-index: 1;
     transition: box-shadow 0.3s, transform 0.3s;
+    border: 1px solid black;
   }
   #services-880 .cs-item:hover {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -973,6 +974,7 @@
     position: relative;
     z-index: 1;
     transition: box-shadow 0.3s, transform 0.3s;
+    border: 1px solid black;
   }
   #services-881 .cs-item:hover {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
