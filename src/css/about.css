@@ -291,6 +291,8 @@
   #sbs-1982 .cs-stars {
     display: flex;
     flex-direction: row;
+    filter: invert(49%) sepia(86%) saturate(684%) hue-rotate(180deg)
+      brightness(76%) contrast(178%);
   }
   #sbs-1982 .cs-rating {
     display: flex;
@@ -371,6 +373,8 @@
     width: 3.75rem;
     height: auto;
     display: block;
+    filter: invert(49%) sepia(86%) saturate(684%) hue-rotate(180deg)
+      brightness(76%) contrast(178%);
   }
   #sbs-1982 .cs-desc {
     /* 25px - 31px */
