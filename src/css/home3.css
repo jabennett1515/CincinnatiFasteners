@@ -228,7 +228,7 @@
 /* Large Desktop - Parallax Effect - 1600px */
 @media only screen and (min-width: 100rem) {
   #hero-1617 {
-    background: url("../assets/images/temporary/home3/image.png");
+    background: url("/assets/images/home2/dark-bolt.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

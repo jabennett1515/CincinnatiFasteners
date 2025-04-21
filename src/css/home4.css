@@ -25,13 +25,14 @@
 
     background-image:
     url('/assets/images/temporary/home3/wave-mask.svg'),
-    url('/assets/images/temporary/home4/image.png');
+    url('/assets/images/home2/dark-bolt.jpg');
   background-position: bottom center, center center;
   background-repeat: no-repeat, no-repeat;
   background-size: 100% auto, cover;
   background-color: #f7f7f7;
   position: relative;
   overflow: hidden;
+  padding-bottom: 1rem;
   }
   #hero-855 .cs-container {
     width: 100%;
@@ -73,6 +74,10 @@
     color: var(--headerColor);
     /* color: white; */
     position: relative;
+
+
+    color: white;
+    text-shadow: 1px 2px 2px black;
   }
   #hero-855 .cs-text {
     /* 16px - 20px */
@@ -83,7 +88,7 @@
     max-width: 33.1875rem;
     /* 28px - 40px */
     margin: 0 0 clamp(1.75rem, 3.92vw, 2.5rem) 0;
-
+    text-shadow: 1px 1px 1px black;
     color: white;
   }
   #hero-855 .cs-button-solid {
@@ -166,7 +171,7 @@
 
     background-image:
     url('/assets/images/temporary/home3/wave-mask.svg'),
-    url('/assets/images/temporary/home4/image.png');
+    url('/assets/images/home2/dark-bolt.jpg');
   background-position: bottom center, center center;
   background-repeat: no-repeat, no-repeat;
   background-size: 100% auto, cover;
@@ -1104,6 +1109,8 @@
   }
   #services-470 .cs-item:hover .cs-picture {
       border-color: #fff;
+      filter: 
+      brightness(76%) contrast(178%); /* blue filter */
   }
   #services-470 .cs-item:hover .cs-picture img {
       /* makes img turn grey, then brightened to get whiter */
@@ -1139,6 +1146,8 @@
       flex: none;
       z-index: 10;
       transition: border-color 0.3s;
+      filter: invert(49%) sepia(86%) saturate(684%) hue-rotate(180deg)
+      brightness(76%) contrast(178%); /* blue filter */
   }
   #services-470 .cs-picture img {
       /* 30px - 44px */
@@ -1376,6 +1385,8 @@
       width: clamp(2rem, 4vw, 3rem);
       height: auto;
       margin-right: 0.75rem;
+      filter: invert(49%) sepia(86%) saturate(684%) hue-rotate(180deg)
+      brightness(76%) contrast(178%); /* blue filter */
   }
   #sbs-418 .cs-header {
       /* 16px - 20px */
