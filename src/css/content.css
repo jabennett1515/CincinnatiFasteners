@@ -1260,8 +1260,6 @@
   color: white;
 }
 
-
-
 /*-- -------------------------- -->
 <---         Services           -->
 <--- -------------------------- -*/
@@ -1346,7 +1344,7 @@
   #services-1667 .cs-faq-item {
     list-style: none;
     width: 100%;
-    background-color: transparent;
+    background-color: white;
     border: 1px solid #e8e8e8;
     padding: 0;
     box-sizing: border-box;
@@ -1396,11 +1394,11 @@
     position: relative;
     z-index: 1;
     filter: invert(49%) sepia(86%) saturate(684%) hue-rotate(180deg)
-    brightness(76%) contrast(178%); /* blue filter */
+      brightness(76%) contrast(178%); /* blue filter */
   }
   #services-1667 .cs-indicator:before {
     /* left line */
-    content: '';
+    content: "";
     width: 1rem;
     height: 0.125rem;
     background-color: #767676;
@@ -1411,11 +1409,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: transform .5s;
+    transition: transform 0.5s;
   }
   #services-1667 .cs-indicator:after {
     /* right line */
-    content: '';
+    content: "";
     width: 1rem;
     height: 0.125rem;
     background-color: #767676;
@@ -1426,7 +1424,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(90deg);
-    transition: transform .5s;
+    transition: transform 0.5s;
   }
   #services-1667 .cs-button-text {
     width: 90%;
@@ -1455,7 +1453,8 @@
     width: 2rem;
     height: 2rem;
     display: block;
-    filter: invert(49%) sepia(86%) saturate(684%) hue-rotate(180deg) brightness(76%) contrast(178%);
+    filter: invert(49%) sepia(86%) saturate(684%) hue-rotate(180deg)
+      brightness(76%) contrast(178%);
   }
   #services-1667 .cs-button-solid {
     font-size: 1rem;
@@ -1528,6 +1527,393 @@
     bottom: -6.25rem;
   }
 }
-                                
 
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
 
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-2130 {
+    padding: var(--sectionPadding);
+    background-color: #fdfaf8;
+    /* clips the svg wave from overflowing */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #services-2130 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 44rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #services-2130 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #services-2130 .cs-title {
+    margin: 0;
+  }
+  #services-2130 .cs-card-group {
+    width: 100%;
+    /* changes to 100% at tablet */
+    max-width: 31.25rem;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 1.5vw, 1.25rem);
+  }
+  #services-2130 .cs-item {
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    height: 17.5rem;
+    margin: 0;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    padding: 0;
+    /* clips the image corners */
+    overflow: hidden;
+    grid-column: span 12;
+    grid-row: span 1;
+    gap: 0.5rem;
+    position: relative;
+  }
+  #services-2130 .cs-item:hover .cs-h3,
+  #services-2130 .cs-item:focus-within .cs-h3 {
+    transform: translateY(0);
+  }
+  #services-2130 .cs-item:hover .cs-fake-link,
+  #services-2130 .cs-item:focus-within .cs-fake-link {
+    height: auto;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  #services-2130 .cs-item:hover .cs-background:before,
+  #services-2130 .cs-item:focus-within .cs-background:before {
+    height: 180%;
+  }
+  #services-2130 .cs-item:hover .cs-background img,
+  #services-2130 .cs-item:focus-within .cs-background img {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+  #services-2130 .cs-link {
+    text-decoration: none;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  #services-2130 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+    /* transform down the same amount as the flex gap */
+    transform: translateY(0.75rem);
+    transition: transform 0.3s, color 0.3s;
+  }
+  #services-2130 .cs-fake-link {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    text-decoration: none;
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    color: var(--primary);
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.25rem;
+    transform: translateY(3.125rem);
+    transition: height 0.3s, opacity 0.3s, transform 0.3s;
+  }
+  #services-2130 .cs-icon {
+    width: 1.5rem;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+  }
+  #services-2130 .cs-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #000;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #services-2130 .cs-background:before {
+    /* gradient overlay */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.72) 14.59%,
+      rgba(0, 0, 0, 0) 43.18%
+    );
+    opacity: 1;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: height 0.3s;
+  }
+  #services-2130 .cs-background img {
+    width: 100%;
+    height: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    transition: transform 0.6s, opacity 0.3s;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-2130 .cs-container {
+    max-width: 80rem;
+  }
+  #services-2130 .cs-card-group {
+    max-width: 100%;
+    grid-template-rows: 1fr;
+  }
+  #services-2130 .cs-item {
+    /* 280px - 440px */
+    min-height: clamp(17.5rem, 35vw, 27.5rem);
+    grid-column: span 4;
+  }
+  #services-2130 .cs-item:nth-of-type(4),
+  #services-2130 .cs-item:nth-of-type(5) {
+    grid-column: span 6;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #services-2130 .cs-container {
+    max-width: 115rem;
+  }
+  #services-2130 .cs-card-group {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  #services-2130 .cs-item {
+    grid-column: span 1;
+  }
+  #services-2130 .cs-item:nth-of-type(4),
+  #services-2130 .cs-item:nth-of-type(5) {
+    grid-column: span 1;
+  }
+}
+
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #RPsbs-458,
+  #RPsbsr-458 {
+    padding: var(--sectionPadding);
+  }
+  #RPsbs-458 .cs-container,
+  #RPsbsr-458 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+  }
+  #RPsbs-458 .cs-content,
+  #RPsbsr-458 .cs-content {
+    text-align: left;
+    width: auto;
+    max-width: 40.625rem;
+    margin: 0 1rem;
+    margin-top: -18.75rem;
+    /* 40px - 60px top and bottom */
+    /* 20px - 60px left and right */
+    padding: clamp(2.5rem, 7vw, 3.75rem) clamp(1.25rem, 5.5vw, 3.75rem);
+    background-color: #fafbfc;
+    /* prevents padding from affecting width and height */
+    box-sizing: border-box;
+    border-radius: 0.75rem;
+    /* clips the pseudo element */
+    overflow: hidden;
+    box-shadow: 0px 24px 54px rgba(87, 107, 147, 0.12);
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+    position: relative;
+    z-index: 10;
+  }
+  #RPsbs-458 .cs-content:before,
+  #RPsbsr-458 .cs-content:before {
+    /* green border top */
+    content: "";
+    width: 100%;
+    height: 0.5rem;
+    background: var(--primary);
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+  }
+
+  #RPsbs-458 .cs-text,
+  #RPsbsr-458 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #RPsbs-458 .cs-text:last-of-type,
+  #RPsbsr-458 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #RPsbs-458 .cs-button-solid,
+  #RPsbsr-458 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #RPsbs-458 .cs-button-solid:before,
+  #RPsbsr-458 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #RPsbs-458 .cs-button-solid:hover:before,
+  #RPsbsr-458 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #RPsbs-458 .cs-picture,
+  #RPsbsr-458 .cs-picture {
+    width: 100%;
+    height: auto;
+    height: 27.6875rem;
+    /* clips the img corners */
+    overflow: hidden;
+    border-radius: 1.5rem;
+    display: block;
+    /* sends it to the top */
+    order: -1;
+    position: relative;
+  }
+  #RPsbs-458 .cs-picture img,
+  #RPsbsr-458 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #RPsbs-458 .cs-container,
+  #RPsbsr-458 .cs-container {
+    padding: 3.75rem 0;
+    position: relative;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  #RPsbs-458 .cs-content,
+  #RPsbsr-458 .cs-content {
+    width: 65%;
+    margin: 0;
+  }
+  #RPsbs-458 .cs-picture,
+  #RPsbsr-458 .cs-picture {
+    /* 465px - 617px */
+    width: clamp(29.0625rem, 53vw, 38.5625rem);
+    position: absolute;
+    left: 0;
+    height: 100%;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #RPsbs-458 .cs-content,
+  #RPsbsr-458 .cs-content {
+    /* 90px - 108px */
+    margin-right: clamp(5rem, 8.5vw, 6.75rem);
+  }
+}
+
+/*-- -------------------------- -->
+<---   Side By Side Reverse     -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #RPsbsr-458 {
+    background-color: #f7f7f7;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #RPsbsr-458 .cs-container {
+    align-items: flex-start;
+  }
+  #RPsbsr-458 .cs-picture {
+    left: auto;
+    right: 0;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #RPsbsr-458 .cs-content {
+    margin-right: 0;
+    /* 90px - 108px */
+    margin-left: clamp(5rem, 8.5vw, 6.75rem);
+  }
+}
