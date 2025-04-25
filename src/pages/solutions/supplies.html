@@ -140,7 +140,7 @@ order: 1000
 <!--                  Services                    -->
 <!-- ============================================ -->
 
-<section id="services-447">
+<section id="services-447" class="fade-in">
   <div class="cs-container">
     <div class="cs-content">
       <span class="cs-topper">Supplies</span>
@@ -161,7 +161,7 @@ order: 1000
               aria-hidden="true"
               loading="lazy"
               decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/tree.svg"
+              src="../../assets/images/icons/nut.svg"
               alt="icon"
               width="70"
               height="70"
@@ -199,7 +199,7 @@ order: 1000
               aria-hidden="true"
               loading="lazy"
               decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/truck.svg"
+              src="../../assets/images/icons/screw.svg"
               alt="icon"
               width="70"
               height="70"
@@ -237,7 +237,7 @@ order: 1000
               aria-hidden="true"
               loading="lazy"
               decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/user.svg"
+              src="../../assets/images/icons/screw (1).svg"
               alt="icon"
               width="70"
               height="70"
@@ -275,7 +275,7 @@ order: 1000
               aria-hidden="true"
               loading="lazy"
               decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/sticker.svg"
+              src="../../assets/images/icons/tools.svg"
               alt="icon"
               width="70"
               height="70"
@@ -396,7 +396,7 @@ order: 1000
 <!--                Side By Side                  -->
 <!-- ============================================ -->
 
-<section id="sbs-456">
+<section id="sbs-456" class="fade-in">
   <div class="cs-container">
     <div class="cs-content">
       <span class="cs-topper">Supplies</span>
@@ -433,4 +433,72 @@ order: 1000
   </div>
 </section>
 
+<!-- ============================================ -->
+<!--                    Form                      -->
+<!-- ============================================ -->
+
+<section id="cs-contact-486" class="fade-in">
+  <div class="cs-container">
+      <div class="cs-content">
+        <h2 class="cs-title">Let’s Discuss Your <span class="cs-color">Fastener </span>Solutions</h2>
+        <p class="cs-text">
+            Have a project in mind? We’re here to help you find the perfect fastener solutions. Fill out the form to schedule a consultation at your convenience, or reach out to us directly.
+          </p>
+          <span class="cs-heading">Any problem about your booking?</span>
+          <span class="cs-heading">You can contact us on :</span>
+          <a href="tel:219-555-4545" class="cs-link">(219) 555-4545</a>
+          <a href="mailto:info@codestitch.com" class="cs-link">example@example.com</a> <!-- TODO: need email-->
+      </div>
+      <!--Form-->
+      <form id="cs-form-486" name="Contact Form" method="post">
+          <label class="cs-label">
+              Name
+              <input class="cs-input" required type="text" id="name-486" name="name" placeholder="Name">
+          </label>
+          <label class="cs-label">
+              Phone
+              <input class="cs-input" required type="text" id="phone-486" name="phone" placeholder="Phone">
+          </label>
+          <label class="cs-label">
+              Email
+              <input class="cs-input" required type="text" id="email-486" name="email" placeholder="Email">
+          </label>
+          <label class="cs-label">
+              How Did You Find Us
+              <input class="cs-input" type="text" id="find-486" name="find-us" placeholder="How did you find us?">
+          </label>
+          <label class="cs-label cs-label-message">
+              What do you need help with?
+              <select name="cars" id="cs-select-486">
+                  <option value="fastener solutions">Fastener Solutions</option>
+                  <option value="industrial fasteners">Industrial Fasteners</option>
+                  <option value="other">Other</option>
+              </select>
+          </label>
+          <button class="cs-button-solid cs-submit" type="submit">Contact Us</button>
+      </form>
+  </div>
+</section>
+                              
+
 <script defer src="/assets/js/services.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target); // Stop observing once the element is visible
+          }
+        });
+      },
+      { threshold: 0.00001 } // Trigger when 10% of the element is visible
+    );
+
+    elements.forEach((el) => observer.observe(el));
+  });
+</script>
