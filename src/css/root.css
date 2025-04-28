@@ -447,7 +447,7 @@ html {
     width: 2rem;
     height: 2rem;
     background-color: white;
-    filter: grayscale(1) brightness(1000%);
+    /* filter: grayscale(1) brightness(1000%); */
 
     border-radius: 50%;
     display: flex;
@@ -455,7 +455,8 @@ html {
     align-items: center;
   }
   #cs-navigation .cs-social-icon {
-    filter: grayscale(1) invert(1) brightness(1112%);
+    filter: invert(49%) sepia(86%) saturate(684%) hue-rotate(180deg)
+      brightness(76%) contrast(178%); /* blue filter */
     width: 0.75rem;
     height: auto;
     opacity: 1;
@@ -499,7 +500,7 @@ html {
     content: "";
     width: 100%;
     height: 100%;
-    background-color: #f3f3f3;
+    /* background-color: #f3f3f3; */
     position: absolute;
     display: block;
     top: 0;
@@ -511,7 +512,7 @@ html {
     height: auto;
     display: block;
     transition: transform 0.3s;
-    filter: hue-rotate(230deg) saturate(1.5) brightness(0.9);
+    filter: grayscale(1) brightness(2000%) contrast(1000%);
   }
   #cs-navigation .cs-nav-button .cs-info {
     display: flex;
@@ -1585,7 +1586,6 @@ html {
   border-bottom: 3px solid #000080;
 }
 
-
 /* 
 @keyframes fadeIn {
   from {
@@ -1605,7 +1605,22 @@ html {
 }
 
 .fade-in.visible {
-  
   opacity: 1;
   transform: translateY(0);
+}
+
+.cs-image-wrapper {
+  position: absolute;
+  /* top: 500px; */
+  /* left: 50%; */
+  transform: translateY(-75px);
+  z-index: 1;
+  width: 100%;
+  max-width: 85px;
+  opacity: 0.1;
+}
+.cs-background-image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
