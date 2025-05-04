@@ -183,7 +183,7 @@
     position: absolute;
     display: block;
     top: -15.25rem;
-    right: -2.875rem;
+    right: -3.875rem;
     z-index: 1;
     transform: rotate(-30deg);
     outline: 3.125rem solid rgb(8 112 237 / 9%);
@@ -1406,7 +1406,7 @@
   #services-447 .cs-item {
     width: 100%;
     /* 144px - 274px */
-    padding-top: clamp(9rem, 17.5vw, 17.125rem);
+    padding-top: clamp(9rem, 17.5vw, 24.125rem);
   }
   #services-447 .cs-picture {
     /* 224px - 428px */

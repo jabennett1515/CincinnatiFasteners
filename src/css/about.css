@@ -1312,7 +1312,7 @@
   margin: 2rem 0 2rem 0;
   /* 16px - 32px */
   padding: clamp(1rem, 3vw, 2rem);
-  background-color: white;
+  background-color: var(--primary);
   border-radius: 1rem;
   position: relative;
 }
@@ -1323,7 +1323,7 @@
   width: 100%;
   max-width: 31.25rem;
   margin: 0 0 1rem;
-  color: #767676;
+  color: white;
   display: block;
 }
 #quote-827 .cs-name {
@@ -1333,13 +1333,13 @@
   font-weight: bold;
   width: 100%;
   margin: 0 0 0.25rem;
-  color: var(--headerColor);
+  color: white;
   display: block;
 }
 #quote-827 .cs-job {
   font-size: 0.875rem;
   line-height: 1.5em;
-  color: #767676;
+  color: rgb(240, 240, 240);
   display: block;
 }
 #quote-827 .cs-quote-icon {
@@ -1350,8 +1350,7 @@
   bottom: 0;
   /* 16px - 32px */
   right: clamp(1rem, 4vw, 2rem);
-  filter: invert(49%) sepia(86%) saturate(684%) hue-rotate(180deg)
-    brightness(76%) contrast(178%); /* blue filter */
+  filter: grayscale(1) brightness(1000%);
 }
 
 /*-- -------------------------- -->
@@ -1539,7 +1538,7 @@
     position: absolute;
     display: block;
     top: -15.25rem;
-    right: -2.875rem;
+    right: -4.875rem;
     z-index: 1;
     transform: rotate(-30deg);
     outline: 3.125rem solid rgb(8 112 237 / 9%);

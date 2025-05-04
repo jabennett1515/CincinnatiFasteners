@@ -9,7 +9,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #cta-1235 {
-    background-color: #235987;
+    background-color: #007eea;
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
@@ -110,6 +110,13 @@
   #cta-1235 .cs-input::placeholder {
     color: #767676;
   }
+  #cta-1235 .cs-topper,
+  #cta-1235 .cs-title,
+  #cta-1235 .cs-text {
+    color: white;
+    position: relative;
+    z-index: 20;
+  }
   #cta-1235 .cs-submit {
     width: 100%;
     padding: 0 2rem;
@@ -129,7 +136,7 @@
     content: "";
     width: 21.875rem;
     height: 300%;
-    background: var(--primary);
+    background: #007eea;
     opacity: 1;
     position: absolute;
     display: block;
@@ -137,7 +144,7 @@
     left: -11.875rem;
     z-index: 10;
     transform: rotate(-30deg);
-    outline: 3.125rem solid #23598770;
+    outline: 3.125rem solid #007eea26;
   }
   #cta-1235 .cs-background img {
     position: absolute;
@@ -182,7 +189,7 @@
     content: "";
     width: 34.875rem;
     height: 500%;
-    background: #235987;
+    background: #007eea;
     opacity: 1;
     position: absolute;
     display: block;
@@ -190,7 +197,7 @@
     right: -2.875rem;
     z-index: 1;
     transform: rotate(-30deg);
-    outline: 3.125rem solid #23598770;
+    outline: 3.125rem solid #007eea26;
   }
   #cta-1235 .cs-topper,
   #cta-1235 .cs-title,
