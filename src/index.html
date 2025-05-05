@@ -465,3 +465,57 @@ order: 100
     </form>
   </div>
 </section>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Special Announcement</h2>
+      <span id="closeModal" class="modal-close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <p>
+        Cincinnati Fasteners recently has been ISO 9001 Certified. Allowing us
+        to xyz....<br />
+        <br />
+        Insert more text here?
+      </p>
+    </div>
+    <div class="modal-footer">
+      <button id="closeModalBtn" class="close-btn">OK</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("myModal");
+    const closeModalIcon = document.getElementById("closeModal");
+    const closeModalBtn = document.getElementById("closeModalBtn");
+
+    console.log(window.location.search.includes("?4u"));
+    console.log(window.location.search);
+
+    // 1. Show modal if URL has ?4u
+    if (window.location.search.includes("")) {
+      modal.classList.add("show");
+    }
+
+    // 2. Close modal if the "X" is clicked
+    closeModalIcon.addEventListener("click", function () {
+      modal.classList.remove("show");
+    });
+
+    // 3. Close modal if the footer button is clicked
+    closeModalBtn.addEventListener("click", function () {
+      modal.classList.remove("show");
+    });
+
+    // 4. Close modal if user clicks outside the .modal-content
+    modal.addEventListener("click", function (event) {
+      // The user clicked on the overlay (i.e. the modal background)
+      if (event.target === modal) {
+        modal.classList.remove("show");
+      }
+    });
+  });
+</script>

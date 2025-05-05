@@ -207,7 +207,7 @@ html {
     transition: transform 0.3s;
   }
   #cs-navigation.cs-active .cs-link {
-    color: var(--bodyTextColor);
+    color: #000000;
   }
   #cs-navigation.cs-active .cs-ul-wrapper {
     opacity: 1;

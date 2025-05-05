@@ -2716,3 +2716,174 @@
     width: clamp(45%, 17vw, 48.5%);
   }
 }
+
+.modal {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none; /* Hidden by default, toggled via JS */
+  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent overlay */
+}
+
+/* The actual white box in the center */
+@media only screen and (min-width: 0rem) {
+  /* The actual modal box */
+  .modal-content {
+    background-color: #fff;
+    max-width: 600px; /* Restrict the width */
+    margin: 40% auto; /* Center it vertically + horizontally */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* If anything extends the boundary */
+    opacity: 0; /* Start invisible, fade in via keyframes */
+    transform: translateY(-20px);
+    animation: modalContentFadeIn 0.3s forwards ease-out;
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  /* The actual modal box */
+  .modal-content {
+    background-color: #fff;
+    max-width: 600px; /* Restrict the width */
+    margin: 20% auto; /* Center it vertically + horizontally */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* If anything extends the boundary */
+    opacity: 0; /* Start invisible, fade in via keyframes */
+    transform: translateY(-20px);
+    animation: modalContentFadeIn 0.3s forwards ease-out;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  /* The actual modal box */
+  .modal-content {
+    background-color: #fff;
+    max-width: 600px; /* Restrict the width */
+    margin: 20% auto; /* Center it vertically + horizontally */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* If anything extends the boundary */
+    opacity: 0; /* Start invisible, fade in via keyframes */
+    transform: translateY(-20px);
+    animation: modalContentFadeIn 0.3s forwards ease-out;
+  }
+}
+
+@media only screen and (min-width: 70rem) {
+  /* The actual modal box */
+  .modal-content {
+    background-color: #fff;
+    max-width: 600px; /* Restrict the width */
+    /* margin: 10% auto;  */
+    /* Center it vertically + horizontally */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* If anything extends the boundary */
+    opacity: 0; /* Start invisible, fade in via keyframes */
+    transform: translateY(-20px);
+    animation: modalContentFadeIn 0.3s forwards ease-out;
+  }
+}
+
+/* The overlay */
+.modal {
+  position: fixed; /* Fix position so it stays in view */
+  z-index: 9999; /* Sit on top of everything */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  display: none; /* Hidden by default */
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+/* Animate the overlay (fade in) */
+.modal.show {
+  display: block;
+  animation: modalOverlayFadeIn 0.3s forwards;
+}
+
+@keyframes modalOverlayFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animate the modal content (slide down + fade in) */
+@keyframes modalContentFadeIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Header, Body, and Footer areas */
+.modal-header,
+.modal-body,
+.modal-footer {
+  padding: 16px;
+}
+
+.modal-header {
+  /* background: #f2f2f2; */
+  /* background: #f2f2f2; */
+  background-color: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.modal-body p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.modal-footer {
+  background: #f2f2f2;
+  border-top: 1px solid #ddd;
+  text-align: right;
+}
+
+/* The close “X” in the top-right */
+.modal-close {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  background: none;
+  color: white;
+}
+
+/* Close button in the footer */
+.close-btn {
+  background: var(--primary); /* A nice blue button, can be changed */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.close-btn:hover {
+  background: black;
+}
