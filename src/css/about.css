@@ -1360,7 +1360,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #cta-1235 {
-    background-color: var(--primary);
+    background-color: #040818;
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
@@ -1480,7 +1480,7 @@
     content: "";
     width: 21.875rem;
     height: 300%;
-    background: var(--primary);
+    background: #040818;
     opacity: 1;
     position: absolute;
     display: block;
@@ -1488,7 +1488,7 @@
     left: -11.875rem;
     z-index: 10;
     transform: rotate(-30deg);
-    outline: 3.125rem solid rgba(237, 167, 8, 0.4);
+    outline: 3.125rem solid rgba(24, 30, 66, 0.4);
   }
   #cta-1235 .cs-background img {
     position: absolute;
@@ -1533,7 +1533,7 @@
     content: "";
     width: 34.875rem;
     height: 500%;
-    background: var(--primary);
+    background: #040818;
     opacity: 1;
     position: absolute;
     display: block;
@@ -1541,7 +1541,7 @@
     right: -4.875rem;
     z-index: 1;
     transform: rotate(-30deg);
-    outline: 3.125rem solid rgb(8 112 237 / 9%);
+    outline: 3.125rem solid rgba(4, 22, 43, 0.09);
   }
   #cta-1235 .cs-topper,
   #cta-1235 .cs-title,

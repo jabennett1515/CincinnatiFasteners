@@ -455,9 +455,7 @@ html {
     align-items: center;
   }
   #cs-navigation .cs-social-icon {
-    filter: invert(49%) sepia(86%) saturate(684%) hue-rotate(180deg)
-      brightness(76%) contrast(178%); /* blue filter */
-    width: 0.75rem;
+    width: 1.75rem;
     height: auto;
     opacity: 1;
     display: block;
@@ -991,14 +989,9 @@ html {
     align-items: center;
     transition: background-color 0.3s;
   }
-  #cs-navigation .cs-social-link:hover {
-    background-color: black;
-  }
-  #cs-navigation .cs-social-icon {
-    filter: invert(49%) sepia(86%) saturate(684%) hue-rotate(180deg)
-      brightness(76%) contrast(178%); /* blue filter */
 
-    width: 0.75rem;
+  #cs-navigation .cs-social-icon {
+    width: 1.25rem;
     height: auto;
     opacity: 1;
     display: block;
