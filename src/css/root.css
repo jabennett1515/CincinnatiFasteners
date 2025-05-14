@@ -17,35 +17,34 @@
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "Sofia Pro";
   font-style: normal;
   font-weight: 400;
   src: local(""),
-    url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"),
+    url("../assets/fonts/Sofia\ Pro\ Regular\ Az.otf") format("opentype"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff");
+      url("../assets/fonts/Sofia\ Pro\ Regular\ Az.otf") format("opentype");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-700 - latin */
 @font-face {
-  font-family: "Roboto";
+  font-family: "Sofia Pro";
   font-style: normal;
   font-weight: 700;
   src: local(""),
-    url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"),
+    url("/assets/fonts/Sofia-Pro-Medium-Az.otf") format("opentype"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("/assets/fonts/roboto-v29-latin-700.woff") format("woff");
+      url("/assets/fonts/Sofia-Pro-Medium-Az.otf") format("opentype");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-900 - latin */
 @font-face {
-  font-family: "Roboto";
+  font-family: "Sofia Pro";
   font-style: normal;
   font-weight: 900;
-  src: local(""),
-    url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"),
+  src: local(""), url("/assets/fonts/Sofia Pro Bold Az.otf") format("opentype"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("/assets/fonts/roboto-v29-latin-900.woff") format("woff");
+      url("../assets/fonts/Sofia Pro Bold Az.otf") format("opentype");
 
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
@@ -54,7 +53,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 100%;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Sofia Pro", sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
