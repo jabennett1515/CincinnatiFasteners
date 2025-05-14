@@ -11,86 +11,110 @@ key: Navigation Name
 order: 1000
 ---
 
-
-
 <!-- ============================================ -->
-<!--                   Gallery                    -->
+<!--                    Form                      -->
 <!-- ============================================ -->
 
-<section id="contact-2251">
-  <div class="cs-container">
-    <!--Copy and paste any iframe from Google Maps-->
-    <iframe
-    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=323%20S%20Wayne%20Ave,%20Cincinnati,%20OH%2045215+(Cincinnati%20Fasteners)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"     width="600"
-      height="450"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
-
-    <div class="cs-wrapper">
-      <div class="cs-content">
-        <span class="cs-topper">Contact Us</span>
-        <h2 class="cs-title">Have Questions? Reach out!</h2>
-        <p class="cs-text">
-          Have questions or need assistance? We're here to help! Whether you're looking for custom fastener solutions, vendor-managed inventory, or general inquiries, our team is ready to provide the support you need. Reach out today and let us know how we can assist you.
-
-        </p>
-      </div>
-      <form class="cs-form" id="cs-form-2251" name="Contact Form" method="post">
-        <label class="cs-label">
-          <input
-            class="cs-input"
-            required
-            type="text"
-            id="name-2251"
-            name="name"
-            placeholder="Name"
-          />
-        </label>
-        <label class="cs-label">
-          <input
-            class="cs-input"
-            required
-            type="email"
-            id="email-2251"
-            name="email"
-            placeholder="Email"
-          />
-        </label>
-        <label class="cs-label">
-          <input
-            class="cs-input"
-            type="tel"
-            id="phone-2251"
-            name="phone"
-            placeholder="Phone"
-          />
-        </label>
-        <label class="cs-label">
-          <select class="cs-select" name="class" id="classes-2251">
-            <option value="Service 1">Services</option>
-            <option value="Service 2">Services</option>
-            <option value="Service 3">Services</option>
-            <option value="Service 4">Services</option>
-          </select>
-        </label>
-        <label class="cs-label cs-message">
-          <textarea
-            class="cs-input cs-textarea"
-            required
-            name="Message"
-            id="message-2251"
-            placeholder="Message"
-          ></textarea>
-        </label>
-        <div class="cs-button-wrapper">
-          <button class="cs-button-solid cs-submit" type="submit">
-            Contact Us
-          </button>
-        </div>
-      </form>
+<section id="cs-contact-485">
+  <div class="cs-container fade-in">
+    <div class="cs-content">
+      <h2 class="cs-title">
+        Have Questions? <span class="cs-color">Reach out!</span>
+      </h2>
+      <p class="cs-text">
+        Have questions or need assistance? We're here to help! Whether you're
+        looking for custom fastener solutions, vendor-managed inventory, or
+        general inquiries, our team is ready to provide the support you need.
+        Reach out today and let us know how we can assist you.
+      </p>
+      <span class="cs-heading">You can contact us at:</span>
+      <a href="tel:513-761-6608" class="cs-link">(513) 761-6608</a>
+      <a href="mailto:sales@cincinnatifastener.com" class="cs-link"
+        >sales@cincinnatifastener.com</a
+      >
     </div>
+    <!--Form-->
+    <form id="cs-form-485" name="Contact Form" method="post">
+      <label class="cs-label">
+        Name
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="name-485"
+          name="name"
+          placeholder="Name"
+        />
+      </label>
+      <label class="cs-label">
+        Phone
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="phone-485"
+          name="phone"
+          placeholder="Phone"
+        />
+      </label>
+      <label class="cs-label">
+        Email
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="email-485"
+          name="email"
+          placeholder="Email"
+        />
+      </label>
+      <label class="cs-label">
+        How Did You Find Us
+        <input
+          class="cs-input"
+          type="text"
+          id="find-485"
+          name="find-us"
+          placeholder="How did you find us?"
+        />
+      </label>
+      <label class="cs-label cs-label-message">
+        What do you need help with?
+        <select name="cars" id="cs-select-485">
+          <option value="Fastener Supplies">Fastener Supplies</option>
+          <option value="Key Services">Key Services</option>
+          <option value="Sales">Sales</option>
+          <option value="Support">Support</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+      <button class="cs-button-solid cs-submit" type="submit">
+        Contact Us
+      </button>
+    </form>
   </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <source
+      media="(max-width: 600px)"
+      srcset="
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/house.jpg
+      "
+    />
+    <source
+      media="(min-width: 601px)"
+      srcset="
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/house.jpg
+      "
+    />
+    <img
+      aria-hidden="true"
+      loading="lazy"
+      decoding="async"
+      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/house.jpg"
+      alt="house"
+      width="1920"
+      height="1200"
+    />
+  </picture>
 </section>
