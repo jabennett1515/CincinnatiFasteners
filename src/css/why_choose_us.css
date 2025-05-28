@@ -376,7 +376,13 @@
 /*-- -------------------------- -->
 <---            CTA             -->
 <--- -------------------------- -*/
-
+#cta-1235 .cs-topper,
+#cta-1235 .cs-title,
+#cta-1235 .cs-text {
+  color: white;
+  position: relative;
+  z-index: 20;
+}
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #cta-1235 {
@@ -384,6 +390,13 @@
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
+  }
+  #cta-1235 .cs-topper,
+  #cta-1235 .cs-title,
+  #cta-1235 .cs-text {
+    color: white;
+    position: relative;
+    z-index: 20;
   }
   #cta-1235 .cs-container {
     width: 100%;
@@ -480,6 +493,13 @@
   }
   #cta-1235 .cs-input::placeholder {
     color: #767676;
+  }
+  #cta-1235 .cs-topper,
+  #cta-1235 .cs-title,
+  #cta-1235 .cs-text {
+    color: white;
+    position: relative;
+    z-index: 20;
   }
   #cta-1235 .cs-submit {
     width: 100%;

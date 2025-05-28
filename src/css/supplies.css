@@ -24,6 +24,13 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
+  #cta-1235 .cs-topper,
+  #cta-1235 .cs-title,
+  #cta-1235 .cs-text {
+    color: white;
+    position: relative;
+    z-index: 20;
+  }
   #cta-1235 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
@@ -166,6 +173,13 @@
     /* moved padding back to the section container */
     padding: var(--sectionPadding);
   }
+  #cta-1235 .cs-topper,
+  #cta-1235 .cs-title,
+  #cta-1235 .cs-text {
+    color: white;
+    position: relative;
+    z-index: 20;
+  }
   #cta-1235 .cs-container {
     align-items: center;
     flex-direction: row;
@@ -231,8 +245,21 @@
     display: flex;
     align-items: center;
   }
+  #cta-1235 .cs-topper,
+  #cta-1235 .cs-title,
+  #cta-1235 .cs-text {
+    color: white;
+    position: relative;
+    z-index: 20;
+  }
 }
-
+#cta-1235 .cs-topper,
+#cta-1235 .cs-title,
+#cta-1235 .cs-text {
+  color: white;
+  position: relative;
+  z-index: 20;
+}
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #cta-403 {
