@@ -1370,7 +1370,8 @@
   }
   #services-447 .cs-h3 {
     /* 20px - 25px */
-    font-size: clamp(1.25rem, 1.9vw, 1.5625rem);
+    /* font-size: clamp(1.25rem, 1.9vw, 1.5625rem); */
+    font-size: 1.25rem;
     line-height: 1.2em;
     font-weight: 700;
     margin: 0 0 0.5rem 0;

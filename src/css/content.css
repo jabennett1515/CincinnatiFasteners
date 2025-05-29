@@ -2868,7 +2868,7 @@
   #services-447 .cs-item {
     width: 100%;
     /* 144px - 274px */
-    padding-top: clamp(9rem, 17.5vw, 17.125rem);
+    padding-top: clamp(9rem, 17.5vw, 19.125rem);
   }
   #services-447 .cs-picture {
     /* 224px - 428px */
