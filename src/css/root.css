@@ -1674,3 +1674,18 @@ html {
   height: auto;
   display: block;
 }
+
+/* Mobile-only utility class */
+/* Hide .cs-mobile-only elements on desktop (48rem = 768px and up) */
+@media only screen and (min-width: 48rem) {
+  .cs-mobile-only {
+    display: none !important;
+  }
+}
+
+/* Ensure .cs-mobile-only elements are visible on mobile by default */
+@media only screen and (max-width: 47.9375rem) {
+  .cs-mobile-only {
+    display: block;
+  }
+}
