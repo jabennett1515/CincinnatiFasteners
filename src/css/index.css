@@ -3209,7 +3209,7 @@
     width: 100%;
     height: 100%;
     background: #000;
-    opacity: 0.85;
+    opacity: 0.65;
     position: absolute;
     display: block;
     top: 0;
@@ -3311,7 +3311,7 @@
 /* Desktop - 1300px (To make image background parallax) */
 @media only screen and (min-width: 81.25rem) {
   #hero-143 {
-    background: url("../assets/images/REAL/home/1.png");
+    background: url("../assets/images/REAL/home/c.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

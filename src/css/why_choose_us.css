@@ -512,7 +512,7 @@
     width: 100%;
     height: 23.75rem;
     overflow: hidden;
-    display: block;
+    display: hidden;
     position: relative;
   }
   #cta-1235 .cs-background:before {
