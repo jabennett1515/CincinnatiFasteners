@@ -152,8 +152,8 @@
   #cs-footer-1782 .cs-table {
     width: 100%;
     background-color: #1d1c1c;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-top: 4px solid var(--primary);
+    /* border: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 4px solid var(--primary); */
   }
   #cs-footer-1782 .cs-table tr {
     font-size: 1rem;
