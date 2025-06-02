@@ -1444,6 +1444,7 @@
   #services-447 .cs-picture {
     /* 224px - 428px */
     height: clamp(14rem, 28vw, 26.75rem);
+    box-shadow: 1px 2px 5px 1px #0000008a;
   }
 }
 
