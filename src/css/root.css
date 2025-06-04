@@ -1689,3 +1689,18 @@ html {
     display: block;
   }
 }
+
+/* Desktop-only utility class */
+/* Show .cs-desktop-only elements on desktop (48rem = 768px and up) */
+@media only screen and (min-width: 48rem) {
+  .cs-desktop-only {
+    display: block;
+  }
+}
+
+/* Hide .cs-desktop-only elements on mobile */
+@media only screen and (max-width: 47.9375rem) {
+  .cs-desktop-only {
+    display: none !important;
+  }
+}

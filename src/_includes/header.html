@@ -95,10 +95,10 @@
             <span class="cs-line cs-line3" aria-hidden="true"></span>
           </div>
         </button>
-        <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
-        <div class="cs-ul-wrapper">
+        <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->        <div class="cs-ul-wrapper">
           <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
-            <li class="cs-li cs-dropdown" tabindex="0">
+            <!-- Desktop: Solutions dropdown -->
+            <li class="cs-li cs-dropdown cs-desktop-only" tabindex="0">
               <span class="cs-li-link">
                 Solutions
                 <img
@@ -134,14 +134,33 @@
                     >Fastener Supplies</a
                   >
                 </li>
-                <!-- <li class="cs-drop-li">
-                  <a
-                    href="/solutions/key_services"
-                    class="cs-li-link cs-drop-link {% if page.url == '/services/wells.html' %} cs-active {% endif %}"
-                    >Water Collection</a
-                  >
-                </li> -->
               </ul>
+            </li>
+            
+            <!-- Mobile: Individual solution links -->
+            <li class="cs-li cs-mobile-only">
+              <a
+                href="/solutions/key_services"
+                class="cs-li-link {% if page.url == '/solutions/key_services/' %} cs-active {% endif %}"
+              >
+                Key Services
+              </a>
+            </li>
+            <li class="cs-li cs-mobile-only">
+              <a
+                href="/solutions/markets"
+                class="cs-li-link {% if page.url == '/solutions/markets/' %} cs-active {% endif %}"
+              >
+                Markets Served
+              </a>
+            </li>
+            <li class="cs-li cs-mobile-only">
+              <a
+                href="/solutions/supplies"
+                class="cs-li-link {% if page.url == '/solutions/supplies/' %} cs-active {% endif %}"
+              >
+                Fastener Supplies
+              </a>
             </li>
             <li class="cs-li">
               <a
