@@ -737,8 +737,8 @@ html {
     transition: opacity 0.3s, visibility 0.3s;
     padding-left: 0;
     /* background-color: #489ef1; */
-    /* background-color: #f1f1f1; */
-    background-color: #0780f5;
+    background-color: #f1f1f1;
+    /* background-color: #0780f5; */
   }
   #cs-navigation .cs-drop-li {
     list-style: none;
@@ -747,7 +747,7 @@ html {
   #cs-navigation .cs-li-link.cs-drop-link {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 2vw, 1.25rem);
-    color: white;
+    color: black;
   }
 }
 /* Desktop - 1024px */
